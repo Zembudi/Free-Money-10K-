@@ -22,7 +22,7 @@
     const user = sessionStorage.getItem('loginUser');
     const isAdmin = sessionStorage.getItem('isAdmin');
 
-    if (!user || isAdmin !== "false") {
+    if (!user || isAdmin !== "true") {
       alert("Hanya admin yang bisa melihat log!");
       window.location.href = "index.html";
     }
@@ -46,4 +46,3 @@
   </script>
 </body>
 </html>
-
